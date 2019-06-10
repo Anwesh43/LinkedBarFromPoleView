@@ -219,4 +219,13 @@ class BarFromPoleView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+
+        fun create(activity : Activity) : BarFromPoleView {
+            val view : BarFromPoleView = BarFromPoleView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
